@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServerJWT", "AuthServerJWT\AuthServerJWT.csproj", "{6A184C3C-ACDF-491A-AF41-91B7DD4DD99F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServerJWT.API", "AuthServerJWT\AuthServerJWT.API.csproj", "{6A184C3C-ACDF-491A-AF41-91B7DD4DD99F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServerJWT.Core", "AuthServerJWT.Core\AuthServerJWT.Core.csproj", "{83554C73-B269-49A5-ABA6-DF8E63A866EF}"
 EndProject
@@ -12,6 +12,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServerJWT.Service", "AuthServerJWT.Service\AuthServerJWT.Service.csproj", "{3EE60168-153A-4AF3-A752-516F883AE5D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniApp.API", "MiniApp.API\MiniApp.API.csproj", "{0A792EE2-5992-4DD6-B4E4-CB835A258F56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniApp2.API", "MiniApp2.API\MiniApp2.API.csproj", "{40FAC326-45C0-451F-88C7-F787FDFA43A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniApp3.API", "MiniApp3.API\MiniApp3.API.csproj", "{B652A8D7-5FD5-4528-84D3-11D590E97BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{CC515BF2-6929-48D7-8566-B4B9DE80A9E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{0A792EE2-5992-4DD6-B4E4-CB835A258F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A792EE2-5992-4DD6-B4E4-CB835A258F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A792EE2-5992-4DD6-B4E4-CB835A258F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40FAC326-45C0-451F-88C7-F787FDFA43A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40FAC326-45C0-451F-88C7-F787FDFA43A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40FAC326-45C0-451F-88C7-F787FDFA43A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40FAC326-45C0-451F-88C7-F787FDFA43A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B652A8D7-5FD5-4528-84D3-11D590E97BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B652A8D7-5FD5-4528-84D3-11D590E97BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B652A8D7-5FD5-4528-84D3-11D590E97BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B652A8D7-5FD5-4528-84D3-11D590E97BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC515BF2-6929-48D7-8566-B4B9DE80A9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC515BF2-6929-48D7-8566-B4B9DE80A9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC515BF2-6929-48D7-8566-B4B9DE80A9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC515BF2-6929-48D7-8566-B4B9DE80A9E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
