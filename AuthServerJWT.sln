@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServerJWT.Data", "AuthS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServerJWT.Service", "AuthServerJWT.Service\AuthServerJWT.Service.csproj", "{3EE60168-153A-4AF3-A752-516F883AE5D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniApp.API", "MiniApp.API\MiniApp.API.csproj", "{0A792EE2-5992-4DD6-B4E4-CB835A258F56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3EE60168-153A-4AF3-A752-516F883AE5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EE60168-153A-4AF3-A752-516F883AE5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EE60168-153A-4AF3-A752-516F883AE5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A792EE2-5992-4DD6-B4E4-CB835A258F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A792EE2-5992-4DD6-B4E4-CB835A258F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A792EE2-5992-4DD6-B4E4-CB835A258F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A792EE2-5992-4DD6-B4E4-CB835A258F56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
