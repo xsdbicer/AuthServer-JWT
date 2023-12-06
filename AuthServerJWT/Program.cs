@@ -1,4 +1,6 @@
 using AuthServerJWT.Core.Configuration;
+using AuthServerJWT.Service.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using SharedLibrary.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +13,26 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<CustomTokenOptions>(builder.Configuration.GetSection("TokenOption"));
 builder.Services.Configure<List<Client>>(builder.Configuration.GetSection("Clients"));
+builder.Services.AddAuthentication(opt=> {
+    opt.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme;
+    opt.DefaultChallengeScheme=JwtBearerDefaults.AuthenticationScheme;
+    }).AddJwtBearer(jwtOptions =>
+{
+    var tokenOptions= builder.Configuration.GetSection("TokenOption").Get<CustomTokenOptions>();
+    jwtOptions.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+    {
+        ValidIssuer = tokenOptions.Issuer,
+        ValidAudience= tokenOptions.Audience[0],
+        IssuerSigningKey=SignService.GetSymmetricSecurityKey(tokenOptions.SecurityKey),
 
+
+        ValidateIssuerSigningKey=true,
+        ValidateAudience=true,
+        ValidateIssuer=true,
+        ValidateLifetime=true,
+        ClockSkew=TimeSpan.Zero
+    };
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
