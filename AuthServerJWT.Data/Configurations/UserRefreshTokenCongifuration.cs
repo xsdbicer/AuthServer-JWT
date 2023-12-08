@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace AuthServerJWT.Data.Configurations
 {
-    public class UserRefreshTokenCongifuration : IEntityTypeConfiguration<UserRefreshToken>
+    internal class UserRefreshTokenConfiguration : IEntityTypeConfiguration<UserRefreshToken>
     {
         public void Configure(EntityTypeBuilder<UserRefreshToken> builder)
         {
-            builder.HasKey(x=>x.UserId);
-            builder.Property(x=>x.RefreshToken).IsRequired().HasMaxLength(200);
+            builder.HasKey(x => x.UserId);
+            builder.Property(x => x.Code).IsRequired().HasMaxLength(200);
         }
     }
 }
